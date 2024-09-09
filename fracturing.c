@@ -22,8 +22,8 @@ double calculateDistance()
 {
     // asking the user for input
     double x1 = askForUserInput("Enter x1: ");
-    double y1 = askForUserInput("Enter y1: ");
     double x2 = askForUserInput("Enter x2: ");
+    double y1 = askForUserInput("Enter y1: ");
     double y2 = askForUserInput("Enter y2: ");
     coordinates(x1,y1,x2,y2);
     //calling function to display the coordinates
