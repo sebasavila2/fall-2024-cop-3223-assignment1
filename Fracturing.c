@@ -38,17 +38,38 @@ double calculatePerimeter(){
     //2pir
     printf("The perimeter of the city encompassed by your request is %lf\n",perimeter);
     return 2;
+    //not very hard with calculateDistance
 }
 double calculateArea(){
     double diameter = calculateDistance();
     //redefining diamater and turning into radius for area(unnecessary but clean)
     double radius = diameter/2;
     double area = (pow(radius,2)*PI);
+    //pi r squared using pow function
     printf("The area of the city encompassed by your request is %lf\n",area);
     return 2;
+    //wasn't too hard either
+}
+double calculateWidth(){
+    double width = calculateDistance();
+    // redefining distance as the width
+    printf("The width of the city encompassed by your request is %lf\n",width);
+    return 1;
+    //very easy
+}
+double calculateHeight(){
+    double height = calculateDistance();
+    // redefining distance as the height
+    printf("The height of the city encompassed by your request is %lf\n",height);
+    return 1;
+    //very easy
 }
 int main(int argc, char **argv){
-    //calculateDistance();
+    calculateDistance();
+    calculatePerimeter();
     calculateArea();
+    calculateWidth();
+    calculateHeight();
+
     return 0;
 }
